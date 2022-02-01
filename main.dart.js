@@ -6481,7 +6481,7 @@ case 1:return A.z(p,r)}})
 return A.B($async$fA,r)},
 a16(a,b,c,d){var s=0,r=A.C(t.z),q,p,o,n,m,l
 var $async$a16=A.y(function(e,f){if(e===1)return A.z(f,r)
-while(true)switch(s){case 0:n='Content-Type: multipart/mixed; boundary="foo_bar_baz"\r\nMIME-Version: 1.0\r\nFrom: me\r\nTo: '+b+'\r\nSubject: "Welcome!!"\r\n\r\n--foo_bar_baz\r\nContent-Type: text/plain; charset=UTF-8\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: 7bit\r\n\r\n'+a+'\r\n\r\n--foo_bar_baz\r\nContent-Type: image/png\r\nContent-Transfer-Encoding: base64\r\nContent-Disposition: attachment; filename="example.png"\r\n\r\n'+B.eZ.gfD().c5(d)+"\r\n\r\n--foo_bar_baz--"
+while(true)switch(s){case 0:n='Content-Type: multipart/mixed; boundary="foo_bar_baz"\r\nMIME-Version: 1.0\r\nFrom: me\r\nTo: '+A.f(b)+'\r\nSubject: "Welcome!!"\r\n\r\n--foo_bar_baz\r\nContent-Type: text/plain; charset=UTF-8\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: 7bit\r\n\r\n'+a+'\r\n\r\n--foo_bar_baz\r\nContent-Type: image/png\r\nContent-Transfer-Encoding: base64\r\nContent-Disposition: attachment; filename="example.png"\r\n\r\n'+B.eZ.gfD().c5(d)+"\r\n\r\n--foo_bar_baz--"
 A.aB().$1("message details: "+n)
 q=B.C.gfD().c5(n)
 p=t.z
@@ -6823,11 +6823,12 @@ _.a=a
 _.b=b
 _.c=c
 _.d=d},
-WU:function WU(a,b,c,d){var _=this
+WU:function WU(a,b,c,d,e){var _=this
 _.a=a
 _.b=b
 _.c=c
-_.d=d},
+_.d=d
+_.e=e},
 WV:function WV(a){this.a=a},
 Wz:function Wz(a){this.a=a},
 Wx:function Wx(a){this.a=a},
@@ -37416,7 +37417,7 @@ s=8
 return A.u(k.OC(B.jF),$async$mt)
 case 8:j=a0
 i=A.cM(j.buffer,0,null)
-h=new A.WU(m,a,b,i)
+h=new A.WU(m,a,b,i,c)
 A.j3(h)
 p=2
 s=6
@@ -37572,7 +37573,7 @@ n.sDI(m.aa)
 l="Thanks for joining! We're happy to have you.\nHere's the GoogleDrive link to your personal QRcode below (copy and paste into browswer if needed):\n\n"+A.f(n.gDI())+"\n\nMake sure to save/screenshot the QRcode for signing in. Can't wait to see you!!\n\n- See you next class!\n\nPulso Caribe at UCF\n"
 A.aB().$1("img: "+m.m().l(0))
 s=4
-return A.u(A.a16(l,"memapptesting@gmail.com",m,g),$async$$1)
+return A.u(A.a16(l,q.e,m,g),$async$$1)
 case 4:s=5
 return A.u($.dz.dT(),$async$$1)
 case 5:k.Jr()
